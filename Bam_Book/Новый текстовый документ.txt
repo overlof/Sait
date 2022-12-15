@@ -1,0 +1,24 @@
+<div class="form-popup" id="myForm1">
+                    <form action="../action_page.php" method='POST' enctype="multipart/form-data" class="form-container">
+                        {% csrf_token %}
+                
+                        <label for="login-username"><b>Имя пользователя </b></label>
+                        <input type="text" pattern="[A-Za-z0-9.@_-e]+" name="username" placeholder="Имя пользователя" required>
+
+                        <label for="login-username"><b>Email </b></label>
+                        <input type="text" pattern="[A-Za-z0-9.@_-e]+" name="username" placeholder="Email" required>
+
+                        <label for="login-username"><b>Пароль</b></label>
+                        <input type="password" name="password" placeholder="Пароль" required>
+                        <label for="login-username"><b>Повторите пароль</b></label>
+                        <input type="password" name="password" placeholder="Повторите пароль" required>
+                        </span> 
+                        <button type="submit" class="btn">Регистрация</button>
+                    </form>
+                </div>
+
+
+function openForm1() {
+          document.getElementById("myForm1").style.display = "block";
+          div.style.display = 'none';
+        }
